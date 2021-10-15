@@ -10,7 +10,7 @@ const {Text,Title}=Typography;
 const  News = ({simplified}) => {
     const {data:cryptoNews,isFetching}=useGetCryptoNewsQuery({newsCategory:'Cryptocurrency',count : simplified ? 6: 10})
     
-    console.log(cryptoNews)
+
     if (isFetching) return <Loader/>
     return (
         <>
